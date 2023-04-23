@@ -12,3 +12,6 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /src
 
 RUN git clone https://github.com/Dr-Noob/gpufetch
+RUN cd gpufetch
+
+CMD ["./build.sh"]
