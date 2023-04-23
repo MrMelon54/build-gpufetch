@@ -8,10 +8,3 @@ RUN apt-get update && apt-get install -y \
     git \
     zlib1g-dev \
  && rm -rf /var/lib/apt/lists/*
-
-WORKDIR /src
-
-RUN git clone https://github.com/Dr-Noob/gpufetch
-RUN cd gpufetch
-
-CMD ["./build.sh"]
